@@ -31,7 +31,7 @@
             $filnamn = "gastbok.txt";
 
             // Sätt samman texten
-            $texten = "<h2>$rubrik</h2>\n" .
+            $texten = "<h3>$rubrik</h3>\n" .
                       "<p>$meddelande</p>\n" .
                       "<p>$namn</p>";
 
