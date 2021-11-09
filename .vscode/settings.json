@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/e477e215-c7b5-47b4-b307-9811602d7e33/resourceGroups/myResourceGroup/providers/Microsoft.Web/sites/guestbok",
+    "appService.deploySubpath": "."
+}
