@@ -35,7 +35,7 @@
                       "<p>$meddelande</p>\n" .
                       "<p>$namn</p>";
 
-            file_put_contents($filnamn, $texten);
+            file_put_contents($filnamn, $texten, FILE_APPEND);
 
             // Berätta för användaren att texten har sparats
             echo "<p class=\"alert alert-success\">Din meddelande har sparats!</p>";
