@@ -12,10 +12,10 @@
         <h1 class="display-4">Gästboken</h1>
         <ul class="nav nav-pills">
             <li class="nav-item">
-                <a class="nav-link active" href="index.php">Läsa</a>
+                <a class="nav-link" aria-current="page" href="gastbok.php">Skriva</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="gastbok.php">Skriva</a>
+                <a class="nav-link active" href="lasa.php">Läsa</a>
             </li>
         </ul>
         <?php
@@ -30,5 +30,4 @@
         ?>
     </div>
 </body>
-
 </html>
