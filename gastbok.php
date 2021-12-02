@@ -30,6 +30,10 @@
             <button class="primary">Spara</button>
         </form>
     </div>
+
+    <?php
+    echo "<p></p>";
+    ?>
 </body>
 
 </html>
