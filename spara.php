@@ -10,6 +10,14 @@
 <body>
     <div class="kontainer">
         <h1 class="display-4">Gästbok</h1>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" href="index.php">Läsa</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="gastbok.php">Skriva</a>
+            </li>
+        </ul>
         <?php
         // Ta emot data som skickas
         $rubrik = filter_input(INPUT_POST, 'rubrik', FILTER_SANITIZE_STRING);
@@ -23,11 +31,11 @@
             $filnamn = "gastbok.txt";
 
             // Sätt samman texten
-            $texten = "<h2>$rubrik</h2>\n" .
+            $texten = "<h3>$rubrik</h3>\n" .
                       "<p>$meddelande</p>\n" .
                       "<p>$namn</p>";
 
-            file_put_contents($filnamn, $texten);
+            file_put_contents($filnamn, $texten, FILE_APPEND);
 
             // Berätta för användaren att texten har sparats
             echo "<p class=\"alert alert-success\">Din meddelande har sparats!</p>";
